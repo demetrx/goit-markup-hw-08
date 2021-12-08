@@ -1,0 +1,75 @@
+body {
+  color: getColor('text-primary');
+  background-color: getColor('contrast');
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+p {
+  color: getColor('text-second');
+}
+
+$switch: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.btn {
+  color: getColor('contrast');
+  background-color: getColor('accent');
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.socials {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: color $switch, background-color $switch;
+
+    &:hover,
+    &:focus {
+      color: getColor('contrast');
+      background-color: getColor('accent');
+    }
+  }
+}

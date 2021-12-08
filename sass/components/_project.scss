@@ -1,0 +1,59 @@
+.project {
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: getColor('text-primary');
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  &__type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
+  }
+
+  &__caption {
+    padding: 20px 24px;
+  }
+}
+
+.project__animation {
+  position: relative;
+  height: 294px;
+  overflow: hidden;
+  padding: 0;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.project__description {
+  font-size: 18px;
+  line-height: 28px;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  margin: 0;
+  top: 0;
+  background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
+  color: getColor('contrast');
+  transform: translateY(100%);
+  transition: transform $switch;
+
+  .project:hover & {
+    transform: translateY(0%);
+  }
+}

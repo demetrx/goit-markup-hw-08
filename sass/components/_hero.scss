@@ -1,0 +1,35 @@
+.hero {
+  background-color: getColor('bg-primary');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+
+  &__title {
+    margin: 0 auto 30px auto;
+    color: getColor('contrast');
+    font-weight: 900;
+
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 26px;
+
+    @media screen and (min-width: 480px) {
+      width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      height: 120px;
+      font-size: 44px;
+    }
+  }
+}
