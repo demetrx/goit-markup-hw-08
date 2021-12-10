@@ -14,13 +14,13 @@
         <div class="container header__container ">            
             <a href="" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
             <button type="button" class="mobile-menu__open" data-mobile-menu-open>
-                <svg class="mobile-menu__icon" width="40" height="40" class="icon">
+                <svg class="mobile-menu__icon" width="40" height="40" class="icon" aria-label="Закрыть меню">
                     <use href="./images/sprite.svg#mobile-open"></use>
                 </svg>
             </button>
             
             <div class="mobile-menu" data-mobile-menu>
-                <button type="button" class="mobile-menu__close" data-mobile-menu-close>
+                <button type="button" class="mobile-menu__close" data-mobile-menu-close aria-label="Открыть меню">
                     <svg class="mobile-menu__icon" width="40" height="40" class="icon">
                         <use href="./images/sprite.svg#mobile-close"></use>
                     </svg>
@@ -130,21 +130,35 @@
                 <ul class="ocupation__list list">
                     <li class="ocupation__item">
                         <a class="ocupation__link" href="">
-                            <img class="ocupation__img" src="./images/21.jpg" alt="Экран планшета и руки на клавиатуре" width="370">
+                            <img class="ocupation__img"
+                            srcset="./images/ocupation-1.jpg 370w, ./images/ocupation-1@2x.jpg 740w"
+                            sizes="370px"
+                            src="./images/ocupation-1.jpg" 
+                            alt="Экран планшета и руки на клавиатуре" 
+                            width="370">
                             <p class="ocupation__caption">Десктопные приложения</p>
                         </a>
                     </li>
 
                     <li class="ocupation__item">
                         <a class="ocupation__link" href="">
-                            <img src="./images/22.jpg" alt="Человек использует компьютер и смартфон" width="370">
+                            <img class="ocupation__img"
+                            srcset="./images/ocupation-2.jpg 370w, ./images/ocupation-2@2x.jpg 740w"
+                            sizes="370px" 
+                            src="./images/ocupation-2.jpg" 
+                            alt="Человек использует компьютер и смартфон" 
+                            width="370">
                             <p class="ocupation__caption">Мобильные приложения</p>
                         </a>
                     </li>
 
                     <li class="ocupation__item">
                         <a class="ocupation__link" href="">
-                            <img class="ocupation__img" src="./images/23.jpg" alt="планшет в руке" width="370">
+                            <img class="ocupation__img"
+                            srcset="./images/ocupation-3.jpg 370w, ./images/ocupation-3@2x.jpg 740w"
+                            sizes="370px" 
+                            src="./images/23.jpg" 
+                            alt="планшет в руке" width="370">
                             <p class="ocupation__caption">Дизайнерские решения</p>
                         </a>
                     </li>
@@ -158,7 +172,10 @@
                 <ul class="team__list list">
                     <li class="team__item">
                         <div class="pro">
-                            <img class="pro__photo" src="./images/1.jpg" alt="Игорь Демьяненко" width=270>
+                            <img class="pro__photo" 
+                            srcset="./images/team-1.jpg 270w, ./images/team-1@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                            src="./images/team-1.jpg" alt="Игорь Демьяненко" width=270>
                             <h3 class="pro__name">Игорь Демьяненко</h3>
                             <p class="pro__sphere">Product Designer</p>
                             <ul class="socials pro__socials list">
@@ -184,7 +201,10 @@
 
                     <li class="team__item">
                         <div class="pro">
-                            <img class="pro__photo" src="./images/2.jpg" alt="Ольга Репина" width=270>
+                            <img class="pro__photo"
+                            srcset="./images/team-2.jpg 270w, ./images/team-2@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                            src="./images/team-2.jpg" alt="Ольга Репина" width=270>
                             <h3 class="pro__name">Ольга Репина</h3>
                             <p class="pro__sphere">Frontend Developer</p>
                             <ul class="socials pro__socials list">
@@ -210,7 +230,10 @@
 
                     <li class="team__item">
                         <div class="pro">
-                            <img class="pro__photo" src="./images/3.jpg" alt="Николай Тарасов" width=270>
+                            <img class="pro__photo"
+                            srcset="./images/team-3.jpg 270w, ./images/team-3@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                            src="./images/team-3.jpg" alt="Николай Тарасов" width=270>
                             <h3 class="pro__name">Николай Тарасов</h3>
                             <p class="pro__sphere">Marketing</p>
                             <ul class="socials pro__socials list">
@@ -236,7 +259,10 @@
 
                     <li class="team__item">
                         <div class="pro">
-                            <img class="pro__photo" src="./images/4.jpg" alt="Михаил Ермаков" width=270>
+                            <img class="pro__photo"
+                            srcset="./images/team-4.jpg 270w, ./images/team-4@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+                            src="./images/team-4.jpg" alt="Михаил Ермаков" width=270>
                             <h3 class="pro__name">Михаил Ермаков</h3>
                             <p class="pro__sphere">UI Designer</p>
                             <ul class="socials pro__socials list">

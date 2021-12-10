@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $switch;
@@ -19,16 +20,17 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
+  padding: 30px;
   background-color: getColor('contrast');
   transition: transform $switch;
   width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
   @media screen and (min-width: 480px) {
+    padding: 40px;
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
