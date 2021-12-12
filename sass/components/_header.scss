@@ -9,21 +9,19 @@
     align-items: center;
     justify-content: space-between;
   }
-
+  &--bordered {
+    border-bottom: 1px solid #ececec;
+  }
   @media screen and (min-width: 768px) {
     line-height: 1.14;
     justify-content: stretch;
-
-    &--bordered {
-      border-bottom: 1px solid #ececec;
-    }
   }
 }
 
 .nav {
   @media screen and (max-width: 767px) {
     font-size: 40px;
-    margin-bottom: 302px;
+    margin-bottom: auto;
 
     &__item:not(:last-child) {
       margin-bottom: 32px;
